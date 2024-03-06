@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", async function(){
     dados.forEach(function(municipio){
         const li = document.createElement('li');
  
-        li.textContent = municipio.nome;
- 
+        li.textContent = `${municipio.nome}/${municipio.microrregiao.mesorregiao.UF.sigla}`;
+       // li.textContent = '${municipio.nome}+'/'+uf';
         listaMunicipios.appendChild(li)
     });
 }
